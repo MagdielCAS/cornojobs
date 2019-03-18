@@ -1,0 +1,26 @@
+FROM node:latest
+
+LABEL MAINTAINER=""
+
+ARG DIRECTORY_NAME=cornojobs
+ARG PORTS_TO_EXPOSE=23571
+
+# setup
+RUN mkdir -p /root/${DIRECTORY_NAME}
+WORKDIR /root/${DIRECTORY_NAME}
+
+# install global dependencies
+COPY . ./
+
+# install local dependencies
+RUN npm install --quiet --update-binary
+
+# run build
+RUN npm run build
+
+# ports
+EXPOSE ${PORTS_TO_EXPOSE}
+
+# low-resource init
+RUN echo "tail-file" > ./tail-file
+CMD tail -f ./tail-file

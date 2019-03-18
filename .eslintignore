@@ -1,0 +1,9 @@
+**/*.spec.js
+**/*.test.js
+**/*test*/**
+**/build/**
+**/coverage/**
+**/dist/**
+**/node_modules/**
+logs/**/[^.]*
+out/
