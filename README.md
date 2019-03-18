@@ -3,5 +3,5 @@
 
 It's fine easy to install
 ```bash
-$npm i cornojobs #yarn add cornojobs
+$ npm i cornojobs # yarn add cornojobs
 ```
