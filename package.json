@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/MagdielCAS/cornojobs/issues"
   },
-  "homepage": "https://github.com/MagdielCAS/cornojobs#readme"
+  "homepage": "https://github.com/MagdielCAS/cornojobs#readme",
+  "dependencies": {}
 }
