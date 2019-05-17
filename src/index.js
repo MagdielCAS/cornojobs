@@ -1,3 +1,4 @@
 const slugify = require("./utils/slugify");
+const usernamefy = require("./utils/usernamefy");
 
-module.exports = { slugify };
+module.exports = { usernamefy, slugify };
